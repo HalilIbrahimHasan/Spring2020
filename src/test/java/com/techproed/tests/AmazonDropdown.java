@@ -22,6 +22,7 @@ public class AmazonDropdown extends TestBase {
     @Test
     public void amazonTest(){
         driver.get("https://www.amazon.com/");
+        //Here some changes
         WebElement dropdownElement=driver.findElement(By.id("searchDropdownBox"));
         Select select=new Select(dropdownElement);
         String firstOption=select.getFirstSelectedOption().getText();
